@@ -4,7 +4,7 @@ This is a simple web app for transactions manager.
 
 Front-End: [ReactJs](https://reactjs.org/)
 
-Back-End: [Loopback 3](https://loopback.io/)
+Back-End: [Loopback 3](https://loopback.io/) and [PostgreSQL](https://www.postgresql.org/)
 
 # How to Run?
 First, you have to run the back end:
@@ -20,3 +20,7 @@ After that, you ca run the front-end:
 cd front-end/transactions-manager-web
 npm start
 ```
+
+# Do you want to contribute?
+
+Feel free to clone the project. When you're done, open a MR and it will be reviewed.
