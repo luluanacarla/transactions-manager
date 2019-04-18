@@ -1,0 +1,45 @@
+.app-header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .navbar-brand {
+    padding-top: 0.3rem;
+  }
+
+  .nav-item {
+    .nav-link {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      color: rgba(255, 255, 255, 0.87);
+      opacity: 0.75;
+      transition: opacity 0.3s ease;
+      font-weight: 500;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.065);
+      }
+    }
+
+    &.active .nav-link {
+      opacity: 1;
+      font-weight: 700;
+
+      &:before {
+        left: 0%;
+        right: 0%;
+        border-bottom-color: inherit;
+      }
+
+      &:hover:before {
+        left: 10%;
+        right: 10%;
+      }
+    }
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+}

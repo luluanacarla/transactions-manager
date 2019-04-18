@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": "5432",
+    "database": "transactions_manager_app",
+    "username": "transactionsuser",
+    "password": "1234",
+    "name": "db",
+    "debug": true,
+    "connector": "postgresql"
+  }
+}
