@@ -2,9 +2,9 @@
 
 This is a simple web app for transactions manager.
 
-Front-End: ReacJs
+Front-End: [ReactJs](https://reactjs.org/)
 
-Back-End: NodeJs(Loopback 3)
+Back-End: [Loopback 3](https://loopback.io/)
 
 # How to Run?
 First, you have to run the back end:
