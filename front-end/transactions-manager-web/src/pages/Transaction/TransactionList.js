@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Table, Button } from "reactstrap";
 import { Link } from "react-router-dom";
-import T from "i18n-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import API from "../../components/API/API";
 import { Pagination } from "../../components/Pagination/Pagination";

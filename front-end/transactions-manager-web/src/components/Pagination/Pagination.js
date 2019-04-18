@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import T from "i18n-react";
 import API from "../API/API";
 
 export class Pagination extends Component {

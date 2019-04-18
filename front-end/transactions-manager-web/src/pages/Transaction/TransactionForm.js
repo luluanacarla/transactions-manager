@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import T from "i18n-react";
 import PropTypes from "prop-types";
 import DatePicker from "react-datepicker";
 import moment from "moment";
@@ -242,20 +241,6 @@ class TransactionForm extends Component {
                      if (hiddenPropertyNamesOnForm.includes(propertyName)) {
                       return null;
                     }
-                    if (propertyName === "amount") {
-                      return (
-                        <FormGroup key={propertyName}>
-                          <Label>
-                            Amount
-                          </Label>
-                          <CurrencyInput 
-                          value={resource[propertyName] || ""} 
-                          onChangeEvent={this.handleInputCurrencyChange}
-                          decimalSeparator="," thousandSeparator="." prefix="R$"
-                          className="form-control"/>
-                        </FormGroup>
-                      );
-                    }
                     if (propertyName === "description") {
                       return (
                         <FormGroup key={propertyName}>
@@ -306,6 +291,19 @@ class TransactionForm extends Component {
                         </FormGroup>
                       );
                     }
+
+                    return (
+                      <FormGroup key={propertyName}>
+                        <Label>
+                          Amount
+                        </Label>
+                        <CurrencyInput 
+                        value={resource[propertyName] || ""} 
+                        onChangeEvent={this.handleInputCurrencyChange}
+                        decimalSeparator="," thousandSeparator="." prefix="R$"
+                        className="form-control"/>
+                      </FormGroup>
+                    );
                   })}
                 </div>
               </div>
